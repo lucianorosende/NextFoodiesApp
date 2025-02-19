@@ -4,6 +4,7 @@ import logoImg from "../../public/images/logo.png";
 import styles from "./MainHeader.module.css";
 import Image from "next/image";
 import MainHeaderBG from "./MainHeaderBg";
+import NavLink from "../NavLink/NavLink";
 
 const MainHeader: React.FC = (): JSX.Element => {
     return (
@@ -17,10 +18,12 @@ const MainHeader: React.FC = (): JSX.Element => {
                 <nav className={styles.nav}>
                     <ul>
                         <li>
-                            <Link href="/meals">Browse Meals</Link>
+                            <NavLink href="/meals">Browse Meals</NavLink>
                         </li>
                         <li>
-                            <Link href="/community">Foodies Community</Link>
+                            <NavLink href="/community">
+                                Foodies Community
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>

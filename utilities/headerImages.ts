@@ -6,7 +6,7 @@ import pizzaImg from "@/assets/pizza.jpg";
 import schnitzelImg from "@/assets/schnitzel.jpg";
 import tomatoSaladImg from "@/assets/tomato-salad.jpg";
 
-export const images = [
+export const headerImages = [
     { image: burgerImg, alt: "A delicious, juicy burger" },
     { image: curryImg, alt: "A delicious, spicy curry" },
     { image: dumplingsImg, alt: "Steamed dumplings" },

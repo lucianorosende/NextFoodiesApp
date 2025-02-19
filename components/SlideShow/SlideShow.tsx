@@ -2,7 +2,7 @@
 import React, { JSX, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./slideShow.module.css";
-import { images } from "@/utilities/images";
+import { headerImages } from "@/utilities/headerImages";
 
 const SlideShow: React.FC = (): JSX.Element => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -10,7 +10,7 @@ const SlideShow: React.FC = (): JSX.Element => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) =>
-                prevIndex < images.length - 1 ? prevIndex + 1 : 0
+                prevIndex < headerImages.length - 1 ? prevIndex + 1 : 0
             );
         }, 5000);
         return () => clearInterval(interval);
@@ -18,7 +18,7 @@ const SlideShow: React.FC = (): JSX.Element => {
 
     return (
         <div className={styles.slideshow}>
-            {images.map((image, index) => (
+            {headerImages.map((image, index) => (
                 <Image
                     key={index}
                     src={image.image}
