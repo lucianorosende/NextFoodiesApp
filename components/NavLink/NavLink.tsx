@@ -3,11 +3,7 @@ import React, { JSX } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./NavLink.module.css";
-
-interface NavLinkProps {
-    href: string;
-    children: string;
-}
+import { NavLinkProps } from "@/Interfaces/NavLinkProps";
 
 const NavLink: React.FC<NavLinkProps> = ({ href, children }): JSX.Element => {
     const path = usePathname();

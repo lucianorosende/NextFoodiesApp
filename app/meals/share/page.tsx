@@ -1,7 +1,7 @@
 import React, { JSX } from "react";
 
-const MealsPage: React.FC = (): JSX.Element => {
+const MealsSharePage: React.FC = (): JSX.Element => {
     return <div>MealsShare</div>;
 };
 
-export default MealsPage;
+export default MealsSharePage;

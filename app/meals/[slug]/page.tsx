@@ -1,10 +1,5 @@
 import React, { JSX } from "react";
-
-type MealsDynamicRouteProps = {
-    params: {
-        slug: string;
-    };
-};
+import { MealsDynamicRouteProps } from "@/Interfaces/MealsDynamicRouteProps";
 
 const MealsDynamicRoute: React.FC<MealsDynamicRouteProps> = async ({
     params,
